@@ -33,4 +33,17 @@ final class LaunchListViewModel: ObservableObject {
             hasError = true
         }
     }
+    
+    public func getFormattedDateStringFor(launch: LaunchItem) -> String {
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+        dateFormatter.timeZone = TimeZone(abbreviation: "UTC")
+        guard let dateObject = dateFormatter.date(from: launch.dateOfLaunchStringUtc) else {
+            return launch.dateOfLaunchStringUtc
+        }
+        
+        dateFormatter.dateStyle = .full
+        dateFormatter.timeStyle = .long
+        return dateFormatter.string(from: dateObject)
+    }
 }
