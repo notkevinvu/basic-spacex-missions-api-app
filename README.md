@@ -1,5 +1,7 @@
 # global-payments-coding-challenge
-Take-home coding challenge for Global Payments
+Take-home coding challenge for Global Payments.
+
+Please use XCode version `15.0.1` or later. 
 
 
 ## iPhone Demos
