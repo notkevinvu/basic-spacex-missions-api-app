@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		88E16DF72AFD439A00F8DDB6 /* GlobalPaymentsCodingChallengeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E16DF62AFD439A00F8DDB6 /* GlobalPaymentsCodingChallengeApp.swift */; };
-		88E16DF92AFD439A00F8DDB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E16DF82AFD439A00F8DDB6 /* ContentView.swift */; };
+		88E16DF92AFD439A00F8DDB6 /* LaunchListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E16DF82AFD439A00F8DDB6 /* LaunchListView.swift */; };
 		88E16DFB2AFD439B00F8DDB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E16DFA2AFD439B00F8DDB6 /* Assets.xcassets */; };
 		88E16DFE2AFD439B00F8DDB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E16DFD2AFD439B00F8DDB6 /* Preview Assets.xcassets */; };
 		88E16E082AFD454E00F8DDB6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E16E072AFD454D00F8DDB6 /* NetworkService.swift */; };
@@ -20,7 +20,7 @@
 /* Begin PBXFileReference section */
 		88E16DF32AFD439A00F8DDB6 /* GlobalPaymentsCodingChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GlobalPaymentsCodingChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		88E16DF62AFD439A00F8DDB6 /* GlobalPaymentsCodingChallengeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalPaymentsCodingChallengeApp.swift; sourceTree = "<group>"; };
-		88E16DF82AFD439A00F8DDB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		88E16DF82AFD439A00F8DDB6 /* LaunchListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchListView.swift; sourceTree = "<group>"; };
 		88E16DFA2AFD439B00F8DDB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88E16DFD2AFD439B00F8DDB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		88E16E072AFD454D00F8DDB6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
@@ -59,11 +59,9 @@
 		88E16DF52AFD439A00F8DDB6 /* GlobalPaymentsCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
-				88E16E062AFD44F000F8DDB6 /* LaunchDetailUseCase */,
 				88E16E052AFD44E400F8DDB6 /* LaunchesListUseCase */,
 				88E16E042AFD44DF00F8DDB6 /* Network */,
 				88E16DF62AFD439A00F8DDB6 /* GlobalPaymentsCodingChallengeApp.swift */,
-				88E16DF82AFD439A00F8DDB6 /* ContentView.swift */,
 				88E16DFA2AFD439B00F8DDB6 /* Assets.xcassets */,
 				88E16DFC2AFD439B00F8DDB6 /* Preview Content */,
 			);
@@ -91,16 +89,10 @@
 			isa = PBXGroup;
 			children = (
 				88E16E0B2AFD479E00F8DDB6 /* LaunchListItem.swift */,
+				88E16DF82AFD439A00F8DDB6 /* LaunchListView.swift */,
 				88E16E0D2AFD4CF500F8DDB6 /* LaunchListViewModel.swift */,
 			);
 			path = LaunchesListUseCase;
-			sourceTree = "<group>";
-		};
-		88E16E062AFD44F000F8DDB6 /* LaunchDetailUseCase */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = LaunchDetailUseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -173,7 +165,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				88E16DF92AFD439A00F8DDB6 /* ContentView.swift in Sources */,
+				88E16DF92AFD439A00F8DDB6 /* LaunchListView.swift in Sources */,
 				88E16E0A2AFD46F900F8DDB6 /* GPError.swift in Sources */,
 				88E16E082AFD454E00F8DDB6 /* NetworkService.swift in Sources */,
 				88E16E0C2AFD479E00F8DDB6 /* LaunchListItem.swift in Sources */,

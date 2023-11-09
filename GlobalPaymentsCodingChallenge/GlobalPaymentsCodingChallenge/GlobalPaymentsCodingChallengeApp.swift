@@ -11,7 +11,7 @@ import SwiftUI
 struct GlobalPaymentsCodingChallengeApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            LaunchListView()
         }
     }
 }
