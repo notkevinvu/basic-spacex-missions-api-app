@@ -46,35 +46,32 @@ struct LaunchListView: View {
     
     @ViewBuilder
     func launchDetailItemView(for launch: LaunchItem) -> some View {
-        VStack {
-            AsyncImage(url: URL(string: launch.launchLinks.missionPatchImageUrlString ?? "")) { image in
-                image
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-            } placeholder: {
-                Image(systemName: "photo.fill")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
+        List {
+            Section("Mission patch") {
+                AsyncImage(url: URL(string: launch.launchLinks.missionPatchImageUrlString ?? "")) { image in
+                    image
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                } placeholder: {
+                    Image(systemName: "photo.fill")
+                        .resizable()
+                        .aspectRatio(contentMode: .fit)
+                }
+                .padding([.leading, .trailing, .top], 40)
+                .padding(.bottom, 20)
             }
-            .padding([.leading, .trailing, .top], 40)
-            .padding(.bottom, 20)
-            
-            List {
-                Section("Mission name") {
-                    Text(launch.missionName)
-                }
-                Section("Launch date") {
-                    Text(viewModel.getFormattedDateStringFor(launch: launch))
-                }
-                Section("Rocket name") {
-                    Text(launch.rocket.rocketName)
-                }
-                Section("Launch site name") {
-                    Text(launch.launchSite.siteNameLong)
-                }
+            Section("Mission name") {
+                Text(launch.missionName)
             }
-            
-            Spacer()
+            Section("Launch date") {
+                Text(viewModel.getFormattedDateStringFor(launch: launch))
+            }
+            Section("Rocket name") {
+                Text(launch.rocket.rocketName)
+            }
+            Section("Launch site name") {
+                Text(launch.launchSite.siteNameLong)
+            }
         }
         .navigationTitle(launch.missionName)
         .navigationBarTitleDisplayMode(.inline)
