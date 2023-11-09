@@ -25,7 +25,7 @@ struct LaunchItem: Decodable {
     enum CodingKeys: String, CodingKey {
         case missionName = "mission_name"
         case rocket
-        case launchSite
+        case launchSite = "launch_site"
         case flightNumber = "flight_number"
         case dateOfLaunch = "launch_date_utc"
         case launchLinks = "links"
@@ -52,7 +52,12 @@ struct LaunchSite: Decodable {
 
 struct LaunchLinks: Decodable {
     // for detail view
-    let missionPatchImageUrlString: String
+    let missionPatchImageUrlString: String?
     // for list view
-    let missionPatchSmallImageUrlString: String
+    let missionPatchSmallImageUrlString: String?
+    
+    enum CodingKeys: String, CodingKey {
+        case missionPatchImageUrlString = "mission_patch"
+        case missionPatchSmallImageUrlString = "mission_patch_small"
+    }
 }
