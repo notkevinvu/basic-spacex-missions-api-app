@@ -16,9 +16,9 @@ struct LaunchItem: Decodable {
     let rocket: Rocket
     let launchSite: LaunchSite
     let flightNumber: Int
+    
     // maybe using the unix time in `Double` is better?
-    // API returns list of launches from earliest to most recent
-    let dateOfLaunch: String
+    let dateOfLaunchStringUtc: String
     
     let launchLinks: LaunchLinks
     
@@ -27,8 +27,17 @@ struct LaunchItem: Decodable {
         case rocket
         case launchSite = "launch_site"
         case flightNumber = "flight_number"
-        case dateOfLaunch = "launch_date_utc"
+        case dateOfLaunchStringUtc = "launch_date_utc"
         case launchLinks = "links"
+    }
+}
+
+extension LaunchItem: Identifiable {
+    // using mission name as identifier as the flight number for the v3
+    // api has an edge case for the most recent 2 launches (both have
+    // 110 as the flight number)
+    var id: String {
+        missionName
     }
 }
 
