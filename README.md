@@ -2,18 +2,22 @@
 Take-home coding challenge for Global Payments
 
 
-## iPad demo:
+## iPhone Demos
 
-### Portrait
-https://github.com/notkevinvu/global-payments-coding-challenge/assets/50222947/f5d78ee7-b918-4ce9-a29c-16a81198c615
+### iPhone portrait
+https://github.com/notkevinvu/global-payments-coding-challenge/assets/50222947/af0dfa43-a8f1-417b-b436-6f49e6361c2c
 
-### Landscape
-https://github.com/notkevinvu/global-payments-coding-challenge/assets/50222947/6224316c-1dff-42c3-b7e0-e0b8a9119692
+### iPhone landscape (large size)
+https://github.com/notkevinvu/global-payments-coding-challenge/assets/50222947/2ca7ca56-06c3-40f1-9d2a-9e32d17f9f79
 
-## iPhone demo:
+### iPhone landscape (small/regular size)
+https://github.com/notkevinvu/global-payments-coding-challenge/assets/50222947/5498e893-b380-4af9-af15-915da077ae68
 
-### Portrait (large and small are the same)
-https://github.com/notkevinvu/global-payments-coding-challenge/assets/50222947/c052be22-933a-4ec6-a67e-11229ac4b174
 
-### Landscape
-https://github.com/notkevinvu/global-payments-coding-challenge/assets/50222947/54ada242-5170-40e3-8337-52e430f5fbf5
+## iPad Demos
+
+### iPad portrait
+https://github.com/notkevinvu/global-payments-coding-challenge/assets/50222947/baa2f847-257b-43e5-aeac-fad6ce2c6372
+
+### iPad landscape
+https://github.com/notkevinvu/global-payments-coding-challenge/assets/50222947/ba52bd9c-4fe1-4469-a104-ce06b96fd25c
