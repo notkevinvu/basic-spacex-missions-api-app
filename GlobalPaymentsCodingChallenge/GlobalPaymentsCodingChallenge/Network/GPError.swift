@@ -28,4 +28,19 @@ enum GPError: Error {
     /// Error for typical internet connection issues which render the request incomplete.
     /// Return this if an error is received in `URLSession.dataTask`
     case unableToComplete
+    
+    var customDescription: String {
+        switch self {
+            case .invalidRequest:
+                "Invalid request"
+            case .invalidResponse:
+                "Invalid response"
+            case .invalidData:
+                "Invalid data"
+            case .invalidDecoding:
+                "Invalid decoding"
+            case .unableToComplete:
+                "Unable to complete"
+        }
+    }
 }
