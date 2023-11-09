@@ -11,6 +11,8 @@
 		88E16DF92AFD439A00F8DDB6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E16DF82AFD439A00F8DDB6 /* ContentView.swift */; };
 		88E16DFB2AFD439B00F8DDB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E16DFA2AFD439B00F8DDB6 /* Assets.xcassets */; };
 		88E16DFE2AFD439B00F8DDB6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 88E16DFD2AFD439B00F8DDB6 /* Preview Assets.xcassets */; };
+		88E16E082AFD454E00F8DDB6 /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E16E072AFD454D00F8DDB6 /* NetworkService.swift */; };
+		88E16E0A2AFD46F900F8DDB6 /* GPError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 88E16E092AFD46F900F8DDB6 /* GPError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		88E16DF82AFD439A00F8DDB6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		88E16DFA2AFD439B00F8DDB6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		88E16DFD2AFD439B00F8DDB6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		88E16E072AFD454D00F8DDB6 /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
+		88E16E092AFD46F900F8DDB6 /* GPError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GPError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +55,9 @@
 		88E16DF52AFD439A00F8DDB6 /* GlobalPaymentsCodingChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				88E16E062AFD44F000F8DDB6 /* MissionsDetailUseCase */,
+				88E16E052AFD44E400F8DDB6 /* MissionsListUseCase */,
+				88E16E042AFD44DF00F8DDB6 /* Network */,
 				88E16DF62AFD439A00F8DDB6 /* GlobalPaymentsCodingChallengeApp.swift */,
 				88E16DF82AFD439A00F8DDB6 /* ContentView.swift */,
 				88E16DFA2AFD439B00F8DDB6 /* Assets.xcassets */,
@@ -65,6 +72,29 @@
 				88E16DFD2AFD439B00F8DDB6 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		88E16E042AFD44DF00F8DDB6 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				88E16E072AFD454D00F8DDB6 /* NetworkService.swift */,
+				88E16E092AFD46F900F8DDB6 /* GPError.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		88E16E052AFD44E400F8DDB6 /* MissionsListUseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MissionsListUseCase;
+			sourceTree = "<group>";
+		};
+		88E16E062AFD44F000F8DDB6 /* MissionsDetailUseCase */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MissionsDetailUseCase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +168,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				88E16DF92AFD439A00F8DDB6 /* ContentView.swift in Sources */,
+				88E16E0A2AFD46F900F8DDB6 /* GPError.swift in Sources */,
+				88E16E082AFD454E00F8DDB6 /* NetworkService.swift in Sources */,
 				88E16DF72AFD439A00F8DDB6 /* GlobalPaymentsCodingChallengeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
