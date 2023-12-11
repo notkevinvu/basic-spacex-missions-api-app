@@ -1,5 +1,5 @@
-# global-payments-coding-challenge
-Take-home coding challenge for Global Payments.
+# basic-spacex-missions-api-app
+Basic app to pull missions from the SpaceX API (https://docs.spacexdata.com/) and display them in list format using SwiftUI. Lots of baked in functionality for size classes and standard SwiftUI layout code.
 
 Please use XCode version `15.0.1` or later. 
 
